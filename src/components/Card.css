@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --color-brand-1: hsl(210, 10%, 33%);
+  --color-brand-2: hsl(201, 11%, 66%);
+  --color-brand-3: hsl(0, 0%, 100%);
+
+  --color-site-1: hsl(171, 66%, 44%);
+  --color-site-2: hsl(233, 100%, 69%);
+  --color-site-3: hsl(0, 0%, 97%);
+
+  --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-bai-jamjuree);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.Card {
+  padding: 3rem 0;
+}
+
+.CardImg {
+  width: 6rem;
+  margin-bottom: 3rem;
+}
+
+.Card:last-of-type .CardImg {
+  margin-bottom: 4.3rem;
+}
+
+.CardTitle {
+  font-size: 2.5rem;
+  color: var(--color-brand-1);
+  margin-bottom: 2rem;
+}
+
+.CardDesc {
+  color: var(--color-brand-2);
+  font-size: 1.6rem;
+}

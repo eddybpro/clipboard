@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --color-brand-1: hsl(210, 10%, 33%);
+  --color-brand-2: hsl(201, 11%, 66%);
+  --color-brand-3: hsl(0, 0%, 100%);
+
+  --color-site-1: hsl(171, 66%, 44%);
+  --color-site-2: hsl(233, 100%, 69%);
+  --color-site-3: hsl(0, 0%, 97%);
+
+  --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-bai-jamjuree);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  background-color: var(--color-site-3);
+  text-align: center;
+  padding: 8rem 0 4rem;
+}
+
+.FooterLogo {
+  display: block;
+  width: 14rem;
+  margin: 0 auto 5rem;
+}
+
+.FooterLinksWrapper > ul {
+  margin-bottom: 3rem;
+}
+
+.FooterLinksWrapper-Link {
+  margin-bottom: 2rem;
+}
+
+.FooterLinksWrapper-Link > a {
+  color: var(--color-brand-1);
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.FooterLinksWrapper-Link > a:hover {
+  color: var(--color-site-1);
+}
+
+.FooterLinksWrapper-SocialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.socialIcon {
+  font-size: 3rem;
+  color: var(--color-brand-1);
+  transition: all 0.2s ease-in-out;
+}
+
+.socialIcon:hover {
+  color: var(--color-site-1);
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    padding: 5rem 4rem 3rem;
+    display: grid;
+    grid-template-columns: 15rem 1fr;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10%;
+  }
+  .FooterLinksWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4rem;
+    text-align: left;
+    padding-top: 2rem;
+  }
+
+  .FooterLinksWrapper-SocialIcons {
+    margin-left: auto;
+  }
+}

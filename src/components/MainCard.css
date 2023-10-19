@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --color-brand-1: hsl(210, 10%, 33%);
+  --color-brand-2: hsl(201, 11%, 66%);
+  --color-brand-3: hsl(0, 0%, 100%);
+
+  --color-site-1: hsl(171, 66%, 44%);
+  --color-site-2: hsl(233, 100%, 69%);
+  --color-site-3: hsl(0, 0%, 97%);
+
+  --font-bai-jamjuree: "Bai Jamjuree", sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-bai-jamjuree);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.SnippetsWrapper {
+  padding: 2rem 0 5rem;
+}
+
+.SnippetsWrapper-Title {
+  font-size: 3rem;
+  color: var(--color-brand-1);
+  margin-bottom: 2rem;
+}
+
+.SnippetsWrapper-Para {
+  font-size: 1.6rem;
+  color: var(--color-brand-2);
+  line-height: 2.2rem;
+}
+
+.FeaturesWrapper-ImgBox {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.FeaturesWrapper-ImgBox > img {
+  width: 100%;
+}
+
+.FeaturesWrapper-TxtBox > h2 {
+  color: var(--color-brand-1);
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.FeaturesWrapper-TxtBox > p {
+  font-size: 1.6rem;
+  color: var(--color-brand-2);
+  margin-bottom: 2rem;
+}
+
+.ClipboardWrapper {
+  padding: 8rem 0;
+}
+
+.ClipboardWrapper-Title {
+  font-size: 3rem;
+  color: var(--color-brand-1);
+  margin-bottom: 2rem;
+}
+
+.ClipboardWrapper-Para {
+  font-size: 1.6rem;
+  color: var(--color-brand-2);
+  margin-bottom: 5rem;
+}
+
+.ClipboardWrapper > img {
+  width: 100%;
+}
+
+.CardsWrapper-Title {
+  font-size: 3rem;
+  color: var(--color-brand-1);
+  margin-bottom: 2rem;
+}
+
+.CardsWrapper-Para {
+  font-size: 1.6rem;
+  color: var(--color-brand-2);
+  margin-bottom: 2rem;
+}
+
+.CardsWrapper-CardsBox {
+  padding: 5rem 0;
+}
+
+.PartnersWrapper-PartnerLogo {
+  display: block;
+  margin: 5rem auto;
+  width: 18rem;
+}
+
+.ClipInfoWrapper {
+  padding: 5rem 0;
+}
+
+.ClipInfoWrapper-Title {
+  font-size: 3rem;
+  color: var(--color-brand-1);
+  margin-bottom: 2rem;
+}
+
+.ClipInfoWrapper-Para {
+  font-size: 1.6rem;
+  color: var(--color-brand-2);
+  margin-bottom: 2rem;
+}
+
+.ClipInfoWrapper-BtnsBox > button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+  width: 80%;
+  display: block;
+  margin: 1.5rem auto 1.5rem;
+  border-radius: 2rem;
+  color: var(--color-brand-3);
+  font-size: 1.6rem;
+  box-shadow: inset 0.5px -1px 1px var(--color-brand-1);
+  transition: all 0.2s ease-in-out;
+}
+
+.ClipInfoWrapper-BtnsBox > button:hover {
+  opacity: 0.8;
+}
+
+.ClipInfoWrapper-BtnsBox-IOSBtn {
+  background-color: var(--color-site-1);
+}
+
+.ClipInfoWrapper-BtnsBox-MacBtn {
+  background-color: var(--color-site-2);
+}
+
+@media screen and (min-width: 768px) {
+  .SnippetsWrapper-Title {
+    font-size: 4rem;
+  }
+
+  .SnippetsWrapper-Para {
+    max-width: 60rem;
+    margin: auto;
+  }
+
+  .FeaturesWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 4rem;
+    text-align: left;
+  }
+
+  .FeaturesWrapper-TxtBox {
+    padding: 5rem 0;
+  }
+
+  .FeaturesWrapper-TxtBox > p {
+    max-width: 40rem;
+  }
+
+  .ClipboardWrapper-Title {
+    font-size: 4rem;
+  }
+
+  .ClipboardWrapper-Para {
+    max-width: 60rem;
+    margin: 0 auto 3rem;
+  }
+
+  .ClipboardWrapper > img {
+    max-width: 90rem;
+  }
+
+  .CardsWrapper-Title {
+    font-size: 4rem;
+  }
+
+  .CardsWrapper-CardsBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .PartnersWrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .ClipInfoWrapper-Title {
+    font-size: 4rem;
+  }
+
+  .ClipInfoWrapper-Para {
+    max-width: 60rem;
+    margin: auto;
+  }
+
+  .ClipInfoWrapper-BtnsBox {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .ClipInfoWrapper-BtnsBox > button {
+    max-width: 25rem;
+    margin: 0;
+  }
+}
