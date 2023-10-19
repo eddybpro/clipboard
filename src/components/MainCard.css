@@ -189,7 +189,7 @@ main {
   }
 
   .ClipboardWrapper > img {
-    max-width: 90rem;
+    max-width: 80%;
   }
 
   .CardsWrapper-Title {
